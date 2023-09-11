@@ -1,0 +1,124 @@
+/* src/components/CalendarWithLegend.css */
+.calendar-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  
+  .calendar {
+    width: 70%; /* Adjust the width as needed */
+  }
+  
+  .legend {
+    width: 30%; /* Adjust the width as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .legend-color {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 50%;
+  }
+  
+  .available {
+    background-color: green;
+  }
+  
+  .half-booked {
+    background-color: yellow;
+  }
+  
+  .fully-booked {
+    background-color: red;
+  }
+  .booking-form {
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+  }
+  /* CSS to change cursor to pointer on date cells */
+.fc-daygrid-day, /* Change for the dayGrid view */
+.fc-list-item-title, /* Change for the list view */
+.fc-day-header, /* Change for the day header */
+.fc-day-top, /* Change for the day in agenda view */
+.fc-list-item-time, /* Change for the list view event time */
+.fc-today /* Change for the current date cell */
+{
+  cursor: pointer;
+}
+.booking-form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  width: 1150px;
+}
+
+.booking-form h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}  
+
+#cross{
+  width: 50px;
+  height: 50px;
+  margin-left: 1100px;
+  margin-top: -10px;
+  margin-bottom: -20px;
+  cursor: pointer;
+}
+.custom-event{
+  background-color: rgb(61, 225, 61);
+}
+.custom-event:hover{
+  background-color: brown;
+  color: white;
+}
